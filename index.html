@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/dungeon-depths" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/br-segma" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed top-0 start-0 z-3 w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <p class="vivid fs-4 mt-1 mx-lg-5 mx-2">iLOVE Code</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hmmm"><button class="btn ayi">Grading
+                                System</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobi"><button class="btn ayi">CGPA Calculator</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fata"><button class="btn ayi">Zodiac Sign Checker</button></a>
+                    </li>
+                </ul>
+                <div class="mx-lg-5">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a href="https://wa.link/5jfi1a" target="_blank"
+                                class="text-decoration-none text-black"><button class="btn hycee">Contact
+                                    Us</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/iLOVE-01?tab=repositories" target="_blank"
+                                class="text-decoration-none text-black"><button class="btn joel">Our Repo</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <video loop autoplay src="video/4769542-uhd_4096_2160_25fps.mp4" width="100%" height="auto"></video>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 m-lg-5 m-2">
+        <div class="col" id="hmmm">
+            <div class="card h-100">
+                <img src="images/Grading system.jpg" class="card-img-top just img-fluid" alt="grading system">
+                <div class="card-body">
+                    <h5 class="card-title">Grading System</h5>
+                    <input type="number" id="gradeInput" placeholder="Enter your score (0 - 100)" min="0" max="100" class="rounded-3 bg-white" />
+                    <button class="btn ayi" onclick="checkGradeLevel()">Check Grade</button>
+                    <div id="gradeResult" class="result"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col" id="hobi">
+            <div class="card h-100">
+                <img src="images/CGPA Calculator.jpg" class="card-img-top just img-fluid" alt="CGPA Calculator">
+                <div class="card-body">
+                    <h5 class="card-title">Check your degree class here</h5>
+                    <input type="number" step="0.01" id="cgpaInput" placeholder="Enter your CGPA (0.00 - 5.00)" class="rounded-3 bg-white" />
+                    <button class="btn ayi" onclick="checkHonor()">Check</button>
+
+                    <div id="cgparesult"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col" id="fata">
+            <div class="card h-100">
+                <img src="images/Zodiac sign.jpg" class="card-img-top just img-fluid" alt="Zodiac sign">
+                <div class="card-body">
+                    <h5 class="card-title">Zodiac Sign Checker</h5>
+                    <input type="number" id="month" placeholder="Month (1-12)" min="1" max="12"
+                        class="rounded-3 bg-white" />
+                    <input type="number" id="day" placeholder="Day (1-31)" min="1" max="31"
+                        class="rounded-3 bg-white" />
+                    <button class="btn ayi" onclick="getZodiac()">Check Zodiac</button>
+
+                    <div id="zodiacresult"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="cgpa.js"></script>
+<script src="grade.js"></script>
+
+</html>

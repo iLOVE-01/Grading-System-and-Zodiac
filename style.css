@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'BR Segma', sans-serif;
+    background-image: linear-gradient(to right, lightblue, white, rgb(13, 192, 13));
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.vivid {
+    font-family: 'Dungeon Depths', sans-serif;
+    font-size: 2em;
+    font-weight: 500;                                          
+}
+
+.ayi {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.ayi:hover {
+    background-color: #45a049; /* Darker green */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+.ayi:active {
+    background-color: #3e8e41; /* Even darker green */
+    transform: translateY(4px);
+}
+
+.ayi:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hycee {
+    background-color: lightblue; /* Green */
+    border: none;
+    color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.hycee:hover {
+    background-color: #45a049; /* Darker green */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    color: lightblue;
+}
+.hycee:active {
+    background-color: #3e8e41; /* Even darker green */
+    transform: translateY(4px);
+}
+.hycee:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.joel {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: lightblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.joel:hover {
+    background-color: lightblue; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    color: #4CAF50;
+
+} 
+
+.joel:active {
+    background-color: #3e8e41; /* Even darker green */
+    transform: translateY(4px);
+}
+.joel:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.just {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    }
+
+#cgparesult, #zodiacresult, #grade {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .ayi, .hycee, .joel {
+        width: 100%;
+        font-size: 14px;
+    }
+    .vivid {
+        font-size: 1.5em;
+    }
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .just {
+        height: auto!important;
+    }
+    
+}
