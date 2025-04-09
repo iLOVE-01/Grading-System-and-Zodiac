@@ -122,6 +122,11 @@ input, button {
         width: 100%;
         font-size: 14px;
     }
+
+    .ai {
+        margin-top: 80px;
+    }
+
     .vivid {
         font-size: 1.5em;
     }
